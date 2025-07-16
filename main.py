@@ -56,5 +56,14 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == '__main__':
-    init_db()
-    asyncio.run(main())
+    print('🤖 Бот включен!')
+    while True:
+        try:
+            asyncio.run(main())
+        except KeyboardInterrupt:
+            print('🛑 Бот выключен пользователем!')
+            break
+        except Exception as e:
+            logging.error(f"⚠️ Неожиданная ошибка: {e}")
+            # time.sleep(5)  # Перезапуск через 5 секунд
+    print('🏁 Завершение работы бота...')
