@@ -1,9 +1,9 @@
 import sqlite3
 import requests, logging
 
-TOKEN = '7810024725:AAGqkFAfZ6rX15YGYW_miu4Km0d7lg02n0Q'
+TOKEN = 'ТОКЕН'
 # Ваш API-ключ от OpenWeatherMap
-API_KEY = '9ec75c7ee009a4ac9f254361c2289bb0'
+API_KEY = 'КЛЮЧ'
 
 # Координаты для погоды
 latitude = 53.259037
